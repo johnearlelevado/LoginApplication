@@ -2,7 +2,10 @@
 
 A modern Android application demonstrating MVVM pattern, and Jetpack Compose implementation of a login system. This project serves as a template and learning resource for building modern Android applications.
 
-![Login Screen](Screenshot_1.png) ![Welcome Screen](Screenshot_2.png)
+<p float="left">
+  <img src="Screenshot_1.png" width="250" hspace="10"/>
+  <img src="Screenshot_2.png" width="250" hspace="10"/>
+</p>
 
 ## Features
 
@@ -48,37 +51,6 @@ git clone https://github.com/johnearlelevado/login-app.git
 - Username: `test`
 - Password: `password`
 
-## Project Structure
-
-```
-app/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/loginapp/
-│   │   │   ├── data/
-│   │   │   │   └── UserRepository.kt
-│   │   │   ├── models/
-│   │   │   │   └── User.kt
-│   │   │   ├── ui/
-│   │   │   │   ├── login/
-│   │   │   │   │   ├── LoginScreen.kt
-│   │   │   │   │   ├── LoginViewModel.kt
-│   │   │   │   │   └── LoginUiState.kt
-│   │   │   │   ├── theme/
-│   │   │   │   │   ├── Color.kt
-│   │   │   │   │   ├── Theme.kt
-│   │   │   │   │   └── Type.kt
-│   │   │   │   └── welcome/
-│   │   │   │       └── WelcomeScreen.kt
-│   │   │   └── MainActivity.kt
-│   │   └── res/
-│   ├── test/
-│   │   └── java/
-│   └── androidTest/
-│       └── java/
-└── build.gradle.kts
-```
-
 ## Architecture
 
 The application follows the MVVM (Model-View-ViewModel) architecture pattern and clean architecture principles:
@@ -87,23 +59,17 @@ The application follows the MVVM (Model-View-ViewModel) architecture pattern and
 - **ViewModel Layer**: Manages UI state and business logic
 - **Data Layer**: Repository pattern for data operations
 
-![Architecture Diagram](screenshots/architecture.png)
-
 ## Testing
 
 The project includes comprehensive test coverage:
 
 - **Unit Tests**: ViewModels, Repository, and business logic
-- **UI Tests**: Compose UI testing
 - **Integration Tests**: End-to-end flow testing
 
 Run tests using:
 ```bash
 # Unit tests
 ./gradlew test
-
-# UI tests
-./gradlew connectedCheck
 ```
 
 ## Contributing
@@ -113,16 +79,3 @@ Run tests using:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## Acknowledgments
-
-- Material Design 3 Guidelines
-- Android Jetpack Components
-- Kotlin Coroutines and Flow
-- JUnit and Mockito testing frameworks
-
-## Contact
-
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/johnearlelevado/login-app](https://github.com/yourusername/login-app)
